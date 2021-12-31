@@ -9,6 +9,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
   return $request->user();
 });
 
+Route::get('/ping', function(){
+  return ['pong' => true];
+});
+
 Route::post('/upload', function(Request $request){
   $array = ['error' => ''];
 
@@ -29,7 +33,7 @@ Route::post('/upload', function(Request $request){
         $foto = $request->file('foto')->store('public');
 
         $url = asset(Storage::url($foto));
-
+        //echo $url;
         $array['url'] = $url;
 
       }

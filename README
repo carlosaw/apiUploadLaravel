@@ -1,0 +1,22 @@
+# laravel
+## Módulo 5: Criação de APIs com Laravel 8
+## Aula 27/28: Upload de arquivos
+
+# Requisitos globais
+## composer global require laravel/installer (instalador do laravel)
+## laravel --version
+
+# Criar Projeto (laravel 6)
+## composer create-project --prefer-dist laravel/laravel laravelcms 6.0.*
+
+# Instalar complementos
+## composer install
+
+# Criar chave
+## php artisan key:generate
+
+# Rodar projeto
+## php artisan serve
+
+# Teste com RestTestTest
+## POST http://127.0.0.1:8000/api/upload
